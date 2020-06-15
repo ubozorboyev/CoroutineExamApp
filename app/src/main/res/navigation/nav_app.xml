@@ -3,11 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_app"
-    app:startDestination="@id/userFragment">
+    app:startDestination="@id/postFragment">
 
     <fragment
         android:id="@+id/userFragment"
         tools:layout="@layout/user_fragment"
         android:name="com.example.coroutineexamapp.ui.main.view.UserFragment"
         android:label="UserFragment" />
+    <fragment
+        android:id="@+id/postFragment"
+        tools:layout="@layout/post_fragment"
+        android:name="com.example.coroutineexamapp.ui.main.view.PostFragment"
+        android:label="PostFragment" >
+        <action
+            android:id="@+id/action_postFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
 </navigation>

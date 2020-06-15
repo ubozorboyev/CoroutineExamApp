@@ -1,6 +1,7 @@
 package com.example.coroutineexamapp.di
 
 import com.example.coroutineexamapp.App
+import com.example.coroutineexamapp.ui.main.view.PostFragment
 import com.example.coroutineexamapp.ui.main.view.UserFragment
 import dagger.Component
 
@@ -11,5 +12,7 @@ interface AppComponent {
     fun inject(userFragment: UserFragment)
 
     fun inject(app:App)
+
+    fun inject(postFragment: PostFragment)
 
 }

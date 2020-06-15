@@ -12,34 +12,3 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-/*
-
-fun maian() = runBlocking { // this: CoroutineScope
-
-      launch {
-          delay(200)
-          println("Task One")             //   3 1 2 5 4 6
-      }
-
-    coroutineScope {
-
-        launch {
-            delay(500)
-            println("Task Two")
-        }
-
-        delay(100)
-        println("Task Three")
-
-
-        coroutineScope {
-            delay(1000)
-            println("Task  Five")
-        }
-
-        println("Task Four")
-    }
-    println("Task  Six")
-
-}
-*/

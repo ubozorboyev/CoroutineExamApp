@@ -37,3 +37,10 @@ data class UserData(
     val id: String,
     val name: String
 )
+
+data class PostItemData(
+    val body: String,
+    val id: Int,
+    val title: String,
+    val userId: Int
+)

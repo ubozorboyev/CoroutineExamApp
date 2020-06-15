@@ -31,6 +31,9 @@ android {
      buildFeatures {
          viewBinding = true
     }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 
 }
 
@@ -72,5 +75,7 @@ dependencies {
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
 
 }
